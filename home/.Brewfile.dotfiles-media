@@ -1,3 +1,8 @@
+brew 'abcde'
+brew 'cdparanoia'
+brew 'eyeD3'
+brew 'flac'
+brew 'lame'
 brew 'mpc'
 brew 'mpd'
 brew 'ncmpcpp'
