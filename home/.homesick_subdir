@@ -1,4 +1,4 @@
 .config/beets
 .mpd
 .ncmpcpp
-.zsh/dotfiles-media.zsh
+.zsh/dotfiles-media
