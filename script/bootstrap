@@ -26,7 +26,7 @@ function install_homebrew_dependencies() {
   brew tap 'homebrew/services'
   brew tap 'homebrew/versions'
   echo "Installing Homebrew Dependencies"
-  brew bundle --file="$HOME/.homesick/repos/dotfiles-media/home/.Brewfile"
+  brew bundle --file="$HOME/.homesick/repos/dotfiles-media/home/.Brewfile.dotfiles-media"
 }
 
 function install_python_packages() {
