@@ -1,0 +1,20 @@
+directory: ~/Dropbox/Music/Library
+library: ~/Dropbox/Music/Library/.library.blb
+
+paths:
+  singleton: _Non-Album/$artist/$title
+
+plugins:
+  - embedart
+  - fetchart
+  - lastgenre
+  - lyrics
+  - missing
+
+import:
+  incremental: yes
+  quiet_fallback: skip
+
+mpdupdate:
+  host: localhost
+  port: 6600

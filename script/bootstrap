@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+function gem_install_or_update() {
+  if gem list "$1" --installed > /dev/null; then
+    gem update "$@"
+  else
+    gem install "$@" --no-document
+  fi
+}
+
+function install_homesick() {
+  echo "Installing dotfiles-media homesick castle"
+  gem_install_or_update homesick
+  homesick clone chrislopresto/dotfiles-media
+  homesick pull dotfiles-media
+  homesick unlink dotfiles-media
+  homesick symlink dotfiles-media --force
+  homesick list
+}
+
+function install_homebrew_dependencies() {
+  brew tap 'homebrew/bundle'
+  brew tap 'caskroom/cask'
+  brew tap 'caskroom/fonts'
+  brew tap 'caskroom/versions'
+  brew tap 'homebrew/core'
+  brew tap 'homebrew/services'
+  brew tap 'homebrew/versions'
+  echo "Installing Homebrew Dependencies"
+  brew bundle --file="$HOME/.homesick/repos/dotfiles-media/home/.Brewfile"
+}
+
+function install_python_packages() {
+  echo "Installing python packages"
+  pip install -U beets
+  pip install -U pylast
+  pip install -U requests
+}
+
+install_homebrew_dependencies
+install_homesick
+install_python_packages
