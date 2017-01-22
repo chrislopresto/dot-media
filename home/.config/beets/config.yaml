@@ -5,16 +5,18 @@ paths:
   singleton: _Non-Album/$artist/$title
 
 plugins:
+  - acousticbrainz
   - embedart
   - fetchart
   - lastgenre
   - lyrics
   - missing
+  - mpdupdate
 
 import:
   incremental: yes
   quiet_fallback: skip
 
-mpdupdate:
+mpd:
   host: localhost
   port: 6600
