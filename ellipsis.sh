@@ -24,5 +24,6 @@ pkg.unlink() {
 }
 
 pkg.install() {
-  $PKG_PATH/script/bootstrap
+  echo "Passing $PKG_PATH to bootstrap"
+  $PKG_PATH/script/bootstrap $PKG_PATH
 }

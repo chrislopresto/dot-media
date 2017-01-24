@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 function install_homebrew_dependencies() {
+  echo "install_homebrew_dependencies has $1"
   brew tap 'homebrew/bundle'
   brew tap 'caskroom/cask'
   brew tap 'caskroom/fonts'
@@ -24,5 +25,6 @@ function install_python_packages() {
   pip install -U requests
 }
 
-install_homebrew_dependencies
+echo "bootstrap has $1"
+install_homebrew_dependencies $1
 install_python_packages
