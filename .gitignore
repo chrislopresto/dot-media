@@ -1,4 +1,3 @@
-**/.ncmpcpp/error.log
+ncmpcpp/error.log
 
-home/.config/beets/state.pickle
-home/.config/hub
+config/beets/state.pickle

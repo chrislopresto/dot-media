@@ -1,12 +1,13 @@
 # chrislopresto dotfiles-media
 
-These are my media-related dotfiles. This repository is a [homesick castle](https://github.com/technicalpickles/homesick). 
+These are my media dotfiles. They use [ellipsis](https://ellipsis.sh/) for installation.
 
 ## Installation
 
-Run the [bootstrap script](script/bootstrap).
+`ellipsis install chrislopresto/media`
 
 ## Prerequisites
 
 - https://github.com/chrislopresto/dotfiles
+- [ellipsis](https://ellipsis.sh/)
 - Dropbox

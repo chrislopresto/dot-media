@@ -11,5 +11,3 @@ brew 'mpc'
 brew 'mpd'
 brew 'ncmpcpp'
 brew 'vorbis-tools'
-
-cask 'musicbrainz-picard'
