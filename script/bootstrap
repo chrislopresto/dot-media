@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function install_homebrew_dependencies() {
+function install_homebrew_dependencies(PKG_PATH) {
   brew tap 'homebrew/bundle'
   brew tap 'caskroom/cask'
   brew tap 'caskroom/fonts'
