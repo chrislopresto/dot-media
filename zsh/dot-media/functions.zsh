@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-echo "dotfiles-media rip town!"
+echo "dot-media rip town!"
 
 function rip() {
   echo "Ripping with abcde"

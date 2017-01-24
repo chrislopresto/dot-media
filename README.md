@@ -1,4 +1,4 @@
-# chrislopresto dotfiles-media
+# chrislopresto dot-media
 
 These are my media dotfiles. They use [ellipsis](https://ellipsis.sh/) for installation.
 

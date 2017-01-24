@@ -12,8 +12,8 @@ pkg.link() {
   fs.link_file zsh/dot-media "$ELLIPSIS_HOME/.zsh/dot-media"
 
   # Files
-  fs.link_file abcde
-  fs.link_file Brewfile.dotfiles-media
+  fs.link_file abcde.conf
+  fs.link_file Brewfile.dot-media
 }
 
 pkg.unlink() {
