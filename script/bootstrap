@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function install_homebrew_dependencies(PKG_PATH) {
+function install_homebrew_dependencies() {
   brew tap 'homebrew/bundle'
   brew tap 'caskroom/cask'
   brew tap 'caskroom/fonts'
@@ -8,12 +8,12 @@ function install_homebrew_dependencies(PKG_PATH) {
   brew tap 'homebrew/core'
   brew tap 'homebrew/services'
   brew tap 'homebrew/versions'
-  if [ -f "$HOME/.Brewfile.dot-media" ]; then
-    echo "Installing Homebrew Dependencies"
-    brew bundle --file="$HOME/.Brewfile.dot-media"
+  if [ -f "$1/Brewfile.dot-media" ]; then
+    echo "Installing Homebrew Dependencies from $1/Brewfile.dot-media"
+    brew bundle --file="$1/Brewfile.dot-media"
   else
-    echo "Installing Homebrew Dependencies from $PKG_PATH/Brewfile.dot-media"
-    brew bundle --file="$PKG_PATH/Brewfile.dot-media"
+    echo "Installing Homebrew Dependencies from $HOME/.Brewfile.dot-media"
+    brew bundle --file="$HOME/.Brewfile.dot-media"
   fi
 }
 
