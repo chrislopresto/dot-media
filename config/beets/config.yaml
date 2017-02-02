@@ -1,5 +1,5 @@
-directory: ~/Dropbox/Music/Library
-library: ~/Dropbox/Music/Library/.library.blb
+directory: ~/Dropbox (Personal)/Music/Library
+library: ~/Dropbox (Personal)/Music/Library/.library.blb
 
 paths:
   singleton: _Non-Album/$artist/$title
